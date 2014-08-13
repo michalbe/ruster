@@ -1,0 +1,34 @@
+[root]
+name = "ruster"
+version = "0.0.1"
+dependencies = [
+ "http 0.1.0-pre (git+https://github.com/chris-morgan/rust-http.git#d57c844fa6e909ee22dc276f4a28a2c00dee1f81)",
+]
+
+[[package]]
+name = "encoding"
+version = "0.1.0"
+source = "git+https://github.com/lifthrasiir/rust-encoding#b82ad2104b2d079620bd227fb9328b2ff8c20ca9"
+
+[[package]]
+name = "http"
+version = "0.1.0-pre"
+source = "git+https://github.com/chris-morgan/rust-http.git#d57c844fa6e909ee22dc276f4a28a2c00dee1f81"
+dependencies = [
+ "openssl 0.0.0 (git+https://github.com/sfackler/rust-openssl.git#39343df472b4b0c99055d371f42beceeef527bd6)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url#63e5d0b570ef4d154e434f68440e4dbe8df23b03)",
+]
+
+[[package]]
+name = "openssl"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-openssl.git#39343df472b4b0c99055d371f42beceeef527bd6"
+
+[[package]]
+name = "url"
+version = "0.1.0"
+source = "git+https://github.com/servo/rust-url#63e5d0b570ef4d154e434f68440e4dbe8df23b03"
+dependencies = [
+ "encoding 0.1.0 (git+https://github.com/lifthrasiir/rust-encoding#b82ad2104b2d079620bd227fb9328b2ff8c20ca9)",
+]
+
