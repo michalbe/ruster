@@ -13,4 +13,5 @@ git = "https://github.com/chris-morgan/rust-http.git"
 
 [[bin]]
 name = "ruster-example"
+src="bin/ruster-example.rs"
 test = false
